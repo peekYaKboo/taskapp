@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" id="ghW-7Y-TjT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vrQ-xf-Qf3">
                             <connections>
-                                <segue destination="Rmv-m6-LMc" kind="show" id="r2H-pR-F8J"/>
+                                <segue destination="Rmv-m6-LMc" kind="show" id="fUW-9Q-bTG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -126,7 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="contentsTextView" destination="Ukz-EH-VbR" id="K73-hD-T0F"/>
-                        <outlet property="dataPicker" destination="xwV-zb-5qk" id="MEk-1P-ujy"/>
+                        <outlet property="datePicker" destination="xwV-zb-5qk" id="Hmx-xD-8Dj"/>
                         <outlet property="titleTextField" destination="cch-DY-sj7" id="haA-nm-2fI"/>
                     </connections>
                 </viewController>

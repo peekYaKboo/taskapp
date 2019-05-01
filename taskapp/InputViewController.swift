@@ -13,7 +13,7 @@ import UserNotifications
 class InputViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentsTextView: UITextView!
-    @IBOutlet weak var dataPicker: UIDatePicker!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     let realm = try! Realm()
     var task: Task!
@@ -27,7 +27,7 @@ class InputViewController: UIViewController {
         
         titleTextField.text = task.title
         contentsTextView.text = task.contents
-        dataPicker.date = task.date
+        datePicker.date = task.date
 
         // Do any additional setup after loading the view.
     }
@@ -36,8 +36,8 @@ class InputViewController: UIViewController {
         try! realm.write{
             self.task.title = self.titleTextField.text!
             self.task.contents = self.contentsTextView.text
-            self.task.date = self.dataPicker.date
-            self.realm.add(self.task, update:true)
+            self.task.date = self.datePicker.date
+            self.realm.add(self.task, update: true)
         }
         
         setNotification(task: task)
